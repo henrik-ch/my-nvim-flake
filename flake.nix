@@ -14,6 +14,9 @@
     let
       config = {
         colorschemes.gruvbox.enable = true;
+	plugins.lightline.enable = true;
+	options.number = true;
+	options.relativenumber = true;
       };
     in
       flake-utils.lib.eachDefaultSystem (system:
