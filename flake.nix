@@ -17,6 +17,15 @@
 	plugins.lightline.enable = true;
 	options.number = true;
 	options.relativenumber = true;
+
+	plugins.nvim-tree = {
+      	  enable = true;
+          diagnostics.enable = true;
+          git.enable = true;
+	  hijackNetrw = true;
+	  disableNetrw = true;
+	  autoClose = false;
+	};
       };
     in
       flake-utils.lib.eachDefaultSystem (system:
